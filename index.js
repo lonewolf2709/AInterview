@@ -7,7 +7,7 @@ const openai = new OpenAI({apiKey:"sk-wk8bw0pCE8wUqiuA3k8oT3BlbkFJRv1UE0Yo9s3oLs
 const app=express();
 app.use(bodyParser.json());
 app.use(cors({
-    origin:["https://ainterview-kappa.vercel.app/inter/1"],
+    origin:["https://ainterview-kappa.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 }));

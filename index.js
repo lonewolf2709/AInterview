@@ -6,7 +6,11 @@ import cors from "cors";
 const openai = new OpenAI({apiKey:"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"});
 const app=express();
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin:["https://ainterview-kappa.vercel.app/inter/1"],
+    methods:["POST","GET"],
+    credentials:true
+}));
 const port =3080;
 app.get('/', function (req,res){
     res.send("Hello WOrld");

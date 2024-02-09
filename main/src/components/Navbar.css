@@ -1,0 +1,50 @@
+.nav-outer1{
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:10vh;
+    position: fixed;
+    width:100%;
+    z-index: 5;
+}
+.nav-outer2{
+    background:linear-gradient(to right,rgb(14, 1, 40) 46%,black 100%);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.leftnav{
+    color:gold;
+    margin-left:3%;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+.rightnav{
+    color:rgb(178, 178, 241);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:3%;
+    gap:20px;
+}
+.butt{
+    font-family: "Raleway", sans-serif;
+    background-color: rgb(107, 86, 126);
+    border:2px rgb(164, 213, 255) solid;
+    border-radius: 10px;
+    color:rgb(154, 195, 230);
+    font-size:0.9rem;
+    font-weight:600;
+    padding:3px 10px;
+    transition: transform 0.2s;
+}
+.butt:hover{
+    transform: scale(1.05);
+}

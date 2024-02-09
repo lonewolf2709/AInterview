@@ -1,0 +1,30 @@
+.main{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+   background-color: rgb(209, 252, 252);
+}
+.content-intro{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+    h1{
+        font-weight: 900 !important;
+        color: #012970;
+        margin-bottom: 0px;
+        font-size: 3rem !important;
+    }
+    h3{
+        color: #444444;
+        margin-top:0px;
+        font-size: 1.8rem !important;
+    }
+    margin-left:3%;
+}
+.intro-image{
+    mix-blend-mode: multiply;
+}

@@ -51,7 +51,7 @@ function Interface()
     {
         setload(true);
         const chatLogFinal=intructions;
-        const response=await fetch("http://localhost:3080",{
+        const response=await fetch("https://ai-interview-psi.vercel.app",{
             method:"POST",
             headers: {
                 "Content-Type":"application/json"
@@ -76,7 +76,7 @@ function Interface()
         setInput("");
         setChatLog(chatlogNew);
         const chatLogFinal=intructions.concat(chatlogNew);
-        const response=await fetch("http://localhost:3080",{
+        const response=await fetch("https://ai-interview-psi.vercel.app",{
             method:"POST",
             headers: {
                 "Content-Type":"application/json"
@@ -97,7 +97,7 @@ function Interface()
         setload(true);
         const del=[{user:"me",message:"The User would like to stop the interview here. Give a 3-4 line feedback and suggest areas for improvement to the user. Tell the user it was great taking his interview and he may leave now.Give a blunt feedback with no sugar coating"}];
         const finalInstuctions=chatLog.concat(del);
-        const response=await fetch("https://ai-interview-psi.vercel.app/",{
+        const response=await fetch("https://ai-interview-psi.vercel.app",{
             method:"POST",
             headers: {
                 "Content-Type":"application/json"
